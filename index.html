@@ -5,15 +5,51 @@
     .photo {
         width:150px;
         border-radius:50%;
-        border-color: sienna;
+        border-color: rgb(115,242,143);
         border-width: 2px;
         border-style: solid;
-        text-align: center;
+        vertical-align:middle;
     }
       
-    .silver-background{
-    background-color: silver;
-  }
+    .purple-background{
+    background-color: rgb(153,51,255);
+        
+    }
+    
+    .text-background{
+        background-color:#4CAF50;
+        color:white;
+    }
+    
+    .rainbow {
+      background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+      background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+      color:transparent;
+  -webkit-background-clip: text;
+      background-clip: text;
+        
+    }
+    
+    .css-button{
+        background-color:#00aced; /* Facebook:#3b5998 LinkedIN: rgb(0,119,181)
+        Twitter:#00aced */
+        border: none;
+        color: white;
+        padding: 7px 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        transition-duration: 0.4s
+        
+    }
+    
+    .css-button:hover{
+        background-color: black;
+        color:white;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+  
     
 </style>
 
@@ -22,23 +58,82 @@
 </head>
 
 <body style="background-color:black">
-    <h1 style="color:white">Welcome to my website</h1>
+    <h1 class="rainbow">Welcome to my website</h1>
     
-    <div class="silver-background">
+    <div class="purple-background">
 
     <a href="https://www.facebook.com/lucasosse"><img class="photo" src="https://scontent.fcpq5-1.fna.fbcdn.net/v/t1.0-9/10441289_866901819991391_3924865745691549783_n.jpg?oh=18f7b3e65a162321cef2ffc51534504f&oe=5A01CDC9" alt="A picture of the website's author"></a>
+    
+    <a href="https://www.facebook.com/lucasosse"><button type="button" class="css-button">Facebook</button></a>
+    <a href="https://www.linkedin.com/in/lucas-osse-596230a0/"><button type="button" class="css-button">LinkedIn</button></a>
+    <a href="https://twitter.com/lucasosse"><button type="button" class="css-button">Twitter</button></a>
 
 </div>
 
-<div style="font-family:verdana">
-
+<div style="font-family:verdana" class="text-background">
+    
+    <h2 style="text-allign:center">About me</h2>
+<!--
 <p>Over the years, I've been developing several prototypes in my quest to learn IT, they are as follows
 </p>
 
 <ul>
     <li>Universe UI</li>
+    <li>Pen Drive Password Manager</li>
     <li>This very website</li>
 </ul>
+-->
+<p>Realizei atividades de atendimento ao público, atualmente desenvolvo estágio na área de TI. Tenho habilidades em programação, desenvolvimento web, Linux e Pacote Office. Sou dinâmico, comunicativo e meu inglês é fluente com experiência internacional.</p>
+
+<h3>Experiência Profissonal</h3>
+
+<ul>
+    <li>Barista <br>
+
+Starbucks , Ribeirão Preto, SP , Janeiro de 2014 a Março de 2014.
+
+Manuzeio de alimentos, atendimento ao público e controle do caixa.
+</li>
+Estagiário
+
+<li>Serviço Publico Municipal<br> Santa Cruz das Palmeiras, SP , Agosto de 2015 até a Setembro de 2016.
+
+Manutenção do cadastro único digital do Programa Bolsa Família, entrada de dados e consulta de informações aos beneficiários do Bolsa Família.
+</li>
+
+<li>Câmara Municipal de Pirassununga<br>Pirassununga, SP , Junho de 2017 até a Presente data.</li>
+
+</ul>
+
+<h4>Formação Acadêmica</h4>
+
+<ul>
+    
+    <li>Graduação em Ciência da Computação em Andamento<br>
+
+Faculdade de Tecnologia, Ciências e Educação (FATECE) • Pirassununga, SP</li>
+
+    <li>Especialização em Inglês<br>
+
+Wizard • Santa Cruz das Palmeiras, SP • 2014
+Curso de Francês
+
+    <li>International Language School of Canada (ILSC) • Montreal, Quebec, Canadá • 2017</li>
+    
+    </ul>
+
+<h5>Habilidades</h5>
+<ul>
+<li>Programação em Linguagem C</li>
+<li>Programação em Linguagem PHP</li>
+<li>Programação em Linguagem Python</li>
+<li>Desenvolvimento Web</li>
+
+<li>Pacote Windows Office</li>
+<li>Inglês Fluente</li>
+<li>Francês Básico</li>
+
+</ul></p>
 
 </div>
 
