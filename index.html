@@ -26,12 +26,11 @@
       background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
       color:transparent;
   -webkit-background-clip: text;
-      background-clip: text;
-        
+    
     }
     
     .css-button{
-        background-color:#00aced; /* Facebook:#3b5998 LinkedIN: rgb(0,119,181)
+ /* Facebook:# LinkedIN: 
         Twitter:#00aced */
         border: none;
         color: white;
@@ -49,28 +48,109 @@
         color:white;
         box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     }
+    
+    .flex-container{
+        display:flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding:10px 5px 15px 20px; 
+    }
+    
+    #twitter{
+        background-color:#00aced
+    }
+    
+    #facebook{
+        background-color:#3b5998;
+    }
+    
+    #Github{
+        background-color:white;
+        color:black !important;
+    }
+    
+    #linkedin{
+        background-color: rgb(0,119,181);
+    }
+    
+    #fcc{
+        background-color:darkgreen;
+    }
   
     
 </style>
 
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!--CLT Password protection 
+
+
+<script>
+
+function passWord() {
+var testV = 1;
+var pass1 = prompt('Please Enter Your Password',' ');
+
+while (testV < 3) {
+    if (!pass1) 
+    history.go(-1); /*global history*/
+    if (pass1 == "letmein") {
+        window.open('clt.html');
+        break;
+} 
+
+testV+=1;
+var pass1 = prompt('Access Denied - Password Incorrect, Please Try Again.','');
+}
+
+    if (pass1.toLowerCase()!="password" & testV ==3) 
+    history.go(-1);
+    return " ";
+} 
+</script>
+
+will try better later with PHP-->
+
+<html lang="en">
+
 <head>
     <title>Lucas Osse's Personal Compendium</title>
+    <meta charset="utf-8"> 
 </head>
 
-<body style="background-color:black">
+<body>
+    
+    <center>
     <h1 class="rainbow">Welcome to my website</h1>
     
     <div class="purple-background">
 
     <a href="https://www.facebook.com/lucasosse"><img class="photo" src="https://scontent.fcpq5-1.fna.fbcdn.net/v/t1.0-9/10441289_866901819991391_3924865745691549783_n.jpg?oh=18f7b3e65a162321cef2ffc51534504f&oe=5A01CDC9" alt="A picture of the website's author"></a>
     
-    <a href="https://www.facebook.com/lucasosse"><button type="button" class="css-button">Facebook</button></a>
-    <a href="https://www.linkedin.com/in/lucas-osse-596230a0/"><button type="button" class="css-button">LinkedIn</button></a>
-    <a href="https://twitter.com/lucasosse"><button type="button" class="css-button">Twitter</button></a>
+    
+    <a href="https://twitter.com/lucasosse" target="_blank"><button id="twitter" class="css-button">Twitter</button></a>
+        
+    <a href="https://www.facebook.com/lucasosse" target="_blank"><button id="facebook" class="css-button">Facebook</button></a>
+    
+    <a href="https://github.com/lucasosse" target="_blank"><button id="github" class="css-button">Github</button></a>
+    
+    <a href="https://www.linkedin.com/in/lucas-osse-596230a0/?ppe=1" target="_blank"><button id="linkedin" class="css-button">LinkedIn</button></a>
+        
+    <a href="https://www.freecodecamp.org/lucasosse" target="_blank"><button id="fcc" class="css-button button-green">Free Code Camp</button></a>
+    
+    </center>
 
 </div>
 
-<div style="font-family:verdana" class="text-background">
+<div style="font-family:verdana" class="text-background flex-container">
     
     <h2 style="text-allign:center">About me</h2>
 <!--
@@ -83,7 +163,7 @@
     <li>This very website</li>
 </ul>
 -->
-<p>Realizei atividades de atendimento ao público, atualmente desenvolvo estágio na área de TI. Tenho habilidades em programação, desenvolvimento web, Linux e Pacote Office. Sou dinâmico, comunicativo e meu inglês é fluente com experiência internacional.</p>
+<p class="text-center">Realizei atividades de atendimento ao público, atualmente desenvolvo estágio na área de TI. Tenho habilidades em programação, desenvolvimento web, Linux e Pacote Office. Sou dinâmico, comunicativo e meu inglês é fluente com experiência internacional.</p>
 
 <h3>Experiência Profissonal</h3>
 
@@ -136,6 +216,16 @@ Curso de Francês
 </ul></p>
 
 </div>
+
+<!-- I tried....
+
+<div style="padding-top:20px;">
+    <center>
+    <form><input class="css-button" type="button" value="Enter C.L.T" onClick="passWord()"></form>
+    </center>
+    </div>
+    
+    -->
 
 </body>
 
